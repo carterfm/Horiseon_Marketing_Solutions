@@ -4,9 +4,18 @@
     margin: 0;
 }
 
+/*Overall note:
+I reorganized style.css to match best formatting practices,
+with priority given first to ensuring that "higher-level" selectors are higher up
+in style.css (so, classes have been moved to the bottom) and second to placing 
+selectors in an order that mimics their position in index.html.*/
+
 body {
     background-color: #d9dcd6;
 }
+
+/*I removed the class "header" and replaced the div tag that was serving as a header
+with a header tag.*/
 
 header {
     padding: 20px;
@@ -20,10 +29,15 @@ header h1 {
     font-size: 48px;
 }
 
+
+/*I removed the "seo" class and moved its code here, since the span tag used to contain
+the letters "seo" in the header is the only span tag in index.html.*/
 header h1 span {
     color: #d9dcd6;
 }
 
+/*I changed the div tag containing the navigation elements of the page editor to a nav
+tag in the interests of clear semantics.*/
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -50,6 +64,12 @@ p {
     font-size: 16px;
 }
 
+
+/*After semantic adjustments to the rest of index.html and style.css,
+the div tag used to handle the large centerpiece image of the website
+was the only remaining div tag in index.html, so the "hero" class was 
+no longer a necessary selector, and I moved its code directly under 
+the div selector's section.*/
 div {
     height: 800px;
     width: 100%;
@@ -59,6 +79,10 @@ div {
     background-position: center;
 }
 
+
+/*I put the main centerpiece content of the app under a main tag, the individual
+sections under "article tags", and consolidated the code relating to this content
+accordingly.*/
 main {
     width: 75%;
     display: inline-block;
@@ -83,6 +107,10 @@ main section h2 {
     font-size: 36px;
 }
 
+/*I put the content on the app's sidebar into an "aside" tag, changed the tags 
+containing the sidebar's content to "article" tags, and consolidated the rest of the code 
+relating to the sidebar here. I also changed the background color of the sidebar content
+to improve its readibility for the visually impaired.*/
 aside {
     margin-right: 20px;
     padding: 20px;
@@ -110,6 +138,8 @@ aside article img {
     max-width: 150px;
 }
 
+/*I consolidated the code relating to the footer under the footer selector after adjusting 
+index.html*/
 footer {
     padding: 30px;
     clear: both;
@@ -121,6 +151,10 @@ footer h2 {
     font-size: 20px;
 }
 
+
+/*"float-left" and "float-right" handle formatting tasks that couldn't be done
+concisely with other selectors alone, so I've left them unchanged, aside from 
+their position in style.css*/
 .float-left {
     float: left;
     margin-right: 25px;
