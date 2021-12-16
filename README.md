@@ -20,6 +20,6 @@ Screenshots of finished app:
 
 Link to deployed app:
 
-- ![Horiseon Marketing Solutions](https://carterfm.github.io/Horiseon_Marketing_Solutions/#social-media-marketing)
+- [Horiseon Marketing Solutions](https://carterfm.github.io/Horiseon_Marketing_Solutions/#social-media-marketing)
 
 
